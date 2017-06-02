@@ -1,0 +1,107 @@
+body {
+    background-color: #c0392b;
+}
+
+
+
+/* ======================
+Playing Cards section 
+=========================*/
+.container {
+	position: relative;
+	text-align: center;
+}
+
+.section {
+	clear: both;
+	padding: 0px;
+	position: fixed;
+	bottom: 0;
+	
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 0%;
+  	bottom: 0;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF SIX  */
+.span_6_of_6 {
+	width: 100%;
+}
+
+.span_5_of_6 {
+  	width: 83.06%;
+}
+
+.span_4_of_6 {
+  	width: 66.13%;
+}
+
+.span_3_of_6 {
+  	width: 49.2%;
+}
+
+.span_2_of_6 {
+  	width: 32.26%;
+}
+
+.span_1_of_6 {
+  	width: 15.5%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_1_of_6, .span_2_of_6, .span_3_of_6, .span_4_of_6, .span_5_of_6, .span_6_of_6 { width: 100%; }
+}
+
+.card1,
+.card2,.card3,.card4,.card5,.card6 {
+	width: 170px;
+	height: 245.6px;
+	
+}
+
+.stage {
+	height: 350px;
+	margin: 10% auto;
+	width: 30%;
+}
+
+.cardOne {
+	width: 200px;
+	height: 275.6px;
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	border-radius: 10px;
+	float: left;
+}
+
+.cardTwo {
+	float: right;
+	width: 200px;
+	height: 275.6px;
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	border-radius: 10px;
+}
+
+.play {
+	margin: auto;
+	padding: 15px;
+}
+
+.header {
+	color: white;
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	font-size: 400%;
+}
